@@ -1,0 +1,260 @@
+# ===================================================================
+# ARQUIVO .GITIGNORE - Projeto Odontologia Frontend
+# ===================================================================
+# Este arquivo impede que informacoes sensiveis e arquivos desnecessarios
+# sejam enviados para o repositorio remoto (GitHub)
+# ===================================================================
+
+# ===================================================================
+# 1. ARQUIVOS DE AMBIENTE E CREDENCIAIS (INFORMACOES SENSIVEIS)
+# ===================================================================
+# Arquivos de variavel de ambiente - NUNCA commitar!
+.env
+.env.local
+.env.development
+.env.development.local
+.env.test
+.env.test.local
+.env.production
+.env.production.local
+.env*.local
+
+# Arquivos de configuracao com credenciais
+*.env
+.env.*
+!.env.example
+
+# Chaves e certificados
+*.pem
+*.key
+*.cert
+*.crt
+*.p12
+*.pfx
+*.jks
+*.keystore
+
+# Arquivos de configuracao de banco de dados
+*.sql
+*.sqlite
+*.db
+
+# Configuracoes de servicos cloud
+firebase*.json
+serviceAccount*.json
+*-service-account.json
+
+# ===================================================================
+# 2. DEPENDENCIAS E PACOTES
+# ===================================================================
+node_modules/
+.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# ===================================================================
+# 3. BUILD E COMPILACAO NEXT.JS
+# ===================================================================
+.next/
+out/
+build/
+dist/
+.vercel/
+
+# ===================================================================
+# 4. SISTEMA OPERACIONAL
+# ===================================================================
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+.AppleDouble
+.LSOverride
+Icon?
+.fseventsd
+.TemporaryItems
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+*.tmp
+*.temp
+*.bak
+*.old
+
+# Linux
+*~
+.directory
+.fuse_hidden*
+.Trash-*
+.nfs*
+
+# ===================================================================
+# 5. EDITORES E IDEs
+# ===================================================================
+# VS Code
+.vscode/
+!.vscode/extensions.json
+!.vscode/settings.json
+
+# JetBrains (WebStorm, IntelliJ)
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+tags
+
+# Emacs
+*\#
+*~
+.\#*
+
+# Notepad++
+*.bak
+*.swp
+
+# ===================================================================
+# 6. LOGS E DEBUG
+# ===================================================================
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+pnpm-debug.log*
+lerna-debug.log*
+debug.log
+logs/
+*.pid
+*.seed
+*.pid.lock
+
+# ===================================================================
+# 7. TESTES E COBERTURA
+# ===================================================================
+coverage/
+.nyc_output/
+*.lcov
+jest-results/
+.vitest/
+
+# =================================================================
+# 8. TEMPORARIOS E BACKUPS
+# ===================================================================
+*.tmp
+*.temp
+*.bak
+*.backup
+*.orig
+*.old
+*.save
+*~
+*.swp
+*.swo
+
+# =================================================================
+# 9. ARQUIVOS DE BUILD ESPECIFICOS
+# =================================================================
+# TypeScript
+*.tsbuildinfo
+tsconfig.tsbuildinfo
+
+# Next.js
+next-env.d.ts
+.vercel/
+
+# Webpack
+*.hot
+client-manifest.json
+server-manifest.json
+
+# =================================================================
+# 10. SEGURANCA E SENSIVEIS
+# ===================================================================
+# Arquivos que podem conter tokens ou chaves
+auth.json
+credentials.json
+secrets.json
+config.json
+settings.json
+*.credentials
+*.secrets
+
+# Tokens de acesso
+access_token*
+refresh_token*
+*_token*
+token*.json
+
+# Chaves de API (qualquer arquivo que possa conter chaves)
+*apikey*
+*api_key*
+*api-key*
+*secret*
+*password*
+
+# =================================================================
+# 11. DOCKER
+# ===================================================================
+docker-compose.override.yml
+
+# =================================================================
+# 12. OUTROS
+# ===================================================================
+# Arquivos de build
+*.map
+*.chunk.js
+*.chunk.css
+
+# Cache
+.cache/
+.parcel-cache/
+
+# Funcoes serverless
+.vercel/functions/
+
+# Configuracoes de CI/CD
+.github/workflows/*.local
+
+# Arquivos de migracao (se houver backend)
+migrations/
+seeds/
+
+# =================================================================
+# 13. ARQUIVOS ESPECIFICOS DO PROJETO
+# =================================================================
+# Configuracoes locais de desenvolvimento
+.local/
+*.local
+
+# Arquivos de agendamento/backup do sistema
+*.agendamento
+*.backup.*
+
+# Logs de erro do sistema
+error*.log
+system*.log
+app*.log
